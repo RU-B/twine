@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Take R" startnode="26" creator="Twine" creator-version="2.2.1" ifid="EEA8BBA1-E83F-4D15-9FF5-B1AB14A22E35" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* http://www.ohiofi.com/blog/twine-css/ */
+<tw-storydata name="Take R" startnode="18" creator="Twine" creator-version="2.2.1" ifid="EEA8BBA1-E83F-4D15-9FF5-B1AB14A22E35" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* http://www.ohiofi.com/blog/twine-css/ */
 
 tw-story {	
   /* The following changes the text */
@@ -81,6 +81,12 @@ tw-story[tags~="teaching"] {
   /*background-color: #3a4350; original*/
   background-color: #1a2330; 
 }
+
+
+
+
+
+
 
 
 
@@ -271,6 +277,12 @@ if (! window.My) {
 
 
 
+
+
+
+
+
+
 </script><tw-passagedata pid="1" name="Go" tags="" position="339,558" size="100,100">You have friends coming for diner tonight and you still need to do some big shopping.
 
 But Darn, where are your car keys? You alway put them on the desk next to your laptop!
@@ -295,7 +307,7 @@ But Darn, where are your car keys? You alway put them on the desk next to your l
 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Inspiration Shame" tags="donotshowinventory" position="1342.3333333333333,1133.6666666666667" size="100,100">Check out what some famous people said about Responsibility:
+</tw-passagedata><tw-passagedata pid="2" name="Inspiration Shame" tags="donotshowinventory" position="1342,1133" size="100,100">Check out what some famous people said about Responsibility:
 
 [[Abraham Lincoln]]
 [[Winston Churchill]]
@@ -338,7 +350,7 @@ It seems you are in denial.
 
 You are not aware of the issue. Some say this is ignoring the problem, but it’s really not even knowing there is an issue to contend with.
 
-[[Return-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="8" name="Lay Blame" tags="teaching" position="849,664.6666666666666" size="100,100">&lt;img src=&quot;resources/stage/layblame.png&quot; alt=&quot;Responsibility-Process-lay-blame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+[[Return-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="8" name="Lay Blame" tags="teaching" position="849,664" size="100,100">&lt;img src=&quot;resources/stage/layblame.png&quot; alt=&quot;Responsibility-Process-lay-blame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 When we hold others at fault for causing something you can call this &#39;&#39;Lay Blame&quot;
 
 What happens when we [[lay blame-&gt;Lay Blame Clip]]?
@@ -346,12 +358,12 @@ What happens when we [[lay blame-&gt;Lay Blame Clip]]?
 How are [[companies|Lay Blame Company Clip]] taking care of this?
 
 (if: $inv contains &quot;Lay Blame&quot;)[Oh! Now you can see when you are laying blame lets [[Investigate-&gt;Justify Intro]]. more.]
-(else:)[There seems no way out if you stay in blame...]</tw-passagedata><tw-passagedata pid="9" name="Justify" tags="teaching" position="849,554.6666666666666" size="100,100">&lt;img src=&quot;resources/stage/justify.png&quot; alt=&quot;Responsibility-Process-justify&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+(else:)[There seems no way out if you stay in blame...]</tw-passagedata><tw-passagedata pid="9" name="Justify" tags="teaching" position="849,554" size="100,100">&lt;img src=&quot;resources/stage/justify.png&quot; alt=&quot;Responsibility-Process-justify&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Justify we use excuses for things being the way they are&#39;&#39;
 
 You look for something to blame (i.e., blame circumstances) “It’s just the way things are” = “It’s not my fault”.
 
-Natural, but not resourceful Circumstances must change for things to get better I can’t do anything about it.
+A natural reaction, but not resourceful. Circumstances must change for things to get better I can’t do anything about it.
 
 [[Justify Clip]]
 
@@ -361,7 +373,7 @@ It is the management
 It is the culture
 
 (if: $inv contains &quot;Justify&quot;)[Yes! Now you can see when you are justifying on circumstances [[Investigate-&gt;Shame Intro]]. more.]
-(else:)[There seems no way out if you stay in justify...]</tw-passagedata><tw-passagedata pid="10" name="Shame" tags="teaching" position="850,444.6666666666667" size="100,100">&lt;img src=&quot;resources/stage/shame.png&quot; alt=&quot;Responsibility-Process-shame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+(else:)[There seems no way out if you stay in justify...]</tw-passagedata><tw-passagedata pid="10" name="Shame" tags="teaching" position="851,438" size="100,100">&lt;img src=&quot;resources/stage/shame.png&quot; alt=&quot;Responsibility-Process-shame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Shame we lay blame on ourselves (often felt as guilt)&#39;&#39;
 
 You blame your self “It’s my fault – I’m rubbish” It’s just the way I am.
@@ -381,7 +393,7 @@ We think we lack something we need
 (else:)[There seems no way out if you stay in shame...]
 
 
-[[I feel too ashamed-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="11" name="Obligation" tags="teaching" position="850,334.6666666666667" size="100,100">&lt;img src=&quot;resources/stage/obligation.png&quot; alt=&quot;Responsibility-Process-obligation&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+[[I feel too ashamed-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="11" name="Obligation" tags="teaching" position="850,313" size="100,100">&lt;img src=&quot;resources/stage/obligation.png&quot; alt=&quot;Responsibility-Process-obligation&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Obligation we do what we have to instead of what we want to&#39;&#39;
 
 You do it under duress (against your will, you feel forced) “I have to do it” = “I have no choice”.
@@ -400,21 +412,21 @@ Natural, but not resourceful I’m trapped by circumstances – things won’t g
 
 [[Oh I can&#39;t take it any more-&gt;Quit Obligation]]
 
-•	</tw-passagedata><tw-passagedata pid="12" name="Quit Shame" tags="donotshowinventory" position="1202.3333333333333,567.3333333333334" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility-Process-quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+•	</tw-passagedata><tw-passagedata pid="12" name="Quit Shame" tags="donotshowinventory" position="1202,567" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility-Process-quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 **In Quit we give up to avoid the pain of Shame**
 
 You pretend it’s not a problem “I can’t take any more – I give up!”.
 
-Natural, but not resourceful The problem hasn’t gone away – I’m still hurting. I can’t do anything about it 
+A natural reaction, but not resourceful. The problem hasn’t gone away – I’m still hurt. I can’t do anything about it 
 
 [[Some inspirational stuff maybe?-&gt;Inspiration Shame]]
 
 [[Ok, there is nothing wrong with me-&gt;Shame]]
 
-&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.play(&#39;p5tVIcYsMJc&#39;);&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Responsibility" tags="teaching" position="846,186.66666666666666" size="100,100">&lt;img src=&quot;resources/stage/responsibility.png&quot; alt=&quot;Responsibility-Process-responsibility&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.play(&#39;p5tVIcYsMJc&#39;);&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Responsibility" tags="teaching" position="846,186" size="100,100">&lt;img src=&quot;resources/stage/responsibility.png&quot; alt=&quot;Responsibility-Process-responsibility&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Responsibility we own our ability and power to create, choose, and attract&#39;&#39;
 
-I choose to own this. It is under my control. I can and will solve it, once and for all. I will look for the root cause – no sticking plasters I will work with whoever I need to.
+I choose to own this. It is under my control. I can and will solve it, once and for all. I will look for the root cause – no sticking plasters. I will work with whoever I need to.
 
 Free, Powerful choice. 
 
@@ -426,10 +438,10 @@ It is:
 &#39;&#39;Change&#39;&#39; vs Resistance
 &#39;&#39;Value&#39;&#39; vs Waste&lt;/center&gt;
 
-[[Great-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="14" name="Lay Blame Clip" tags="" position="1042.6666666666665,662.3333333333333" size="100,100">Check out the following clip
+[[Great-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="14" name="Lay Blame Clip" tags="" position="1042,662" size="100,100">Check out the following clip
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-T3IZ2ISxag?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;start=178;end=207&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
+(29 sec.)
 
 (link: &quot;More&quot;) [You look for someone to blame “It’s their fault” = “It’s not my fault”.
 
@@ -445,66 +457,22 @@ Natural, but not resourceful Somebody else has to change for things to get bette
 
 [[Return-&gt;Lay Blame]] 
 
-&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Intention" tags="" position="1564.3333333333333,516" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="Awareness" tags="" position="1458.3333333333333,500.6666666666667" size="100,100">Awareness of your position</tw-passagedata><tw-passagedata pid="17" name="Confront" tags="" position="1410,563" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Footer" tags="footer" position="193,969" size="100,100">(if: (passage:)&#39;s name is &quot;Inventory&quot;)[&lt;!--Do nothing--&gt;]
+&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Footer" tags="header" position="193,969" size="100,100">(if: (passage:)&#39;s name is &quot;Inventory&quot;)[&lt;!--Do nothing--&gt;]
 (else-if: (passage:)&#39;s tags contains &quot;donotshowinventory&quot;)[&lt;!--Do nothing--&gt;]
-(else:)[
-^^-== Points scored: &lt;my-hl&gt;(print: (history:).length)&lt;/my-hl&gt;	Keys found: &lt;my-hl&gt;(print: $inv.length)&lt;/my-hl&gt;	What you [[learned-&gt;Inventory]]	Time passed: {(live: 0.2s)[
-(print: My.timeSinceStr($startDate))]} ==-^^
-]</tw-passagedata><tw-passagedata pid="19" name="Inventory" tags="inventory" position="159,1095" size="100,100">(if: $inv&#39;s length &gt; 0)[You learned about coping stages: (print: $inv.join(&quot;, &quot;)).]
+(else:)[&lt;div style=&quot;padding:10px; border: 1px solid gray;&quot;&gt;Progress: &lt;my-hl&gt;(print: $inv.length*20)%&lt;/my-hl&gt; - (if: $inv.length &gt;0 )[[[learned-&gt;Learned]]](else:)[learned nothing] (if: $link.length &gt;0 )[ - [[links-&gt;Links]]](else:)[] &lt;/div&gt;
+
+]
+
+</tw-passagedata><tw-passagedata pid="16" name="Learned" tags="inventory donotshowinventory" position="89,1141" size="100,100">Time passed: {(live: 0.3s)[(print: My.timeSinceStr($startDate))]}
+
+(if: $inv&#39;s length &gt; 0)[You learned about coping stages: (print: $inv.join(&quot;, &quot;)).]
 (else:)[There is still a lot to learn...]
 
 
-(if: $link&#39;s length &gt; 0)[Direct access: (print: $link.join(&quot;, &quot;)).]
-(else:)[]
-
-
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="20" name="Get Intention" tags="donotshowinventory" position="1454.3333333333333,257.6666666666667" size="100,100">(set: $inv to $inv + (a: &quot;intention&quot;)) 
-
-Yes you now have earned &quot;Intention&quot;
-
-
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="21" name="Get Awareness" tags="donotshowinventory" position="1437,387.6666666666667" size="100,100">(set: $inv to $inv + (a: &quot;awareness&quot;)) 
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/55073825#50?autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0&quot; width=&quot;640&quot; height=&quot;272&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-awareness /əˈwɛːnəs/
-
-knowledge or perception of a situation or fact.
-&quot;we need to raise public awareness of the issue&quot;
-
-synonyms: consciousness, recognition, realization, cognizance, perception, apprehension, understanding, grasp, appreciation; acknowledgement, knowledge; sensitivity to, sensibility to, insight into; familiarity with, acquaintance with 
-
-&quot;a growing public awareness of the need to protect the environment&quot; 
-
-antonyms: ignorance 
-
-
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="22" name="Get Confront" tags="donotshowinventory" position="1588.3333333333333,627.6666666666666" size="100,100">(set: $inv to $inv + (a: &quot;confront&quot;)) 
-
-Yes you now have earned &quot;Awareness&quot;
-
-
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="23" name="Responsibility mental states" tags="" position="1584.3333333333333,70" size="100,100">Mental state characterized by its point of view
-
-&#39;&#39;Denial&#39;&#39; we ignore the existence of something
-&#39;&#39;Lay Blame&#39;&#39; we hold others at fault for causing something
-&#39;&#39;Justify&#39;&#39; we use excuses (circumstances) for things being the way they are
-&#39;&#39;Shame&#39;&#39; we lay blame on ourselves (often felt as guilt
-&#39;&#39;Obligation&#39;&#39; we do what we have to instead of what we want to
-&#39;&#39;Quit&#39;&#39; we give up to avoid the pain of Shame and Obligation
-&#39;&#39;Responsibility&#39;&#39; we own our ability and power to create, choose, and attract
-
-These mental positions are natural. We all experience them every day.
-
-The first six mental states (Denial, Lay Blame, Justify, Shame, Obligation, and Quit) are how we cope with problems that we don’t yet know how to face and solve. Think of them as coping mechanisms or defense strategies. In these mental states, our problem doesn’t go away, instead we learn to cope with it
-The mental state—Responsibility—is the mental state in which we grow to overcome problems.
-</tw-passagedata><tw-passagedata pid="24" name="Untitled Passage" tags="" position="1694.3333333333333,527.6666666666666" size="100,100">$inv&gt;[so]
-
-
-(if: $inv contains &quot;housekeys&quot;)[Oh! You can use your keys to [[unlock your front door]].]
-(else:)[You cannot open the door. The door is locked. If only you had your housekeys]</tw-passagedata><tw-passagedata pid="25" name="Lay Blame Company Clip" tags="" position="1005.3333333333334,838.6666666666666" size="100,100">In a company we...
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="17" name="Lay Blame Company Clip" tags="" position="1043,782" size="100,100">In a company we...
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/t__NoFstCmQ?rel=0&amp;amp;showinfo=0&amp;amp;start=572;end=617&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(45 sec.)
 
 (link: &quot;Transcription&quot;)[...we pay more attention to knowing who to blame in case we fail, than to creating the conditions to succeed. All the human intelligence put in organization design -- urban structures, processing systems -- what is the real goal? To have somebody guilty in case they fail. We are creating organizations able to fail, but in a compliant way, with somebody clearly accountable when we fail. And we are quite effective at that -- failing.]
 
@@ -516,9 +484,7 @@ Is his statement true?
 [[Return-&gt;Lay Blame]] 
 
 &lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="26" name="Start" tags="donotshowinventory start" position="392,184" size="100,100">Hi, welcome here! 
-
-We are about to start a journey. During the journey you can score points and search for keys.
+</tw-passagedata><tw-passagedata pid="18" name="Start" tags="donotshowinventory start" position="392,184" size="100,100">We are about to start a journey (20 minutes). 
 
 There will be some videoclips with audio ahead.
 
@@ -530,9 +496,7 @@ If you do not hear music please check out your audio settings before proceeding 
 
 time: (print: My.currentTime())
 
-&lt;iframe width=&quot;1&quot; height=&quot;1&quot; src=&quot;https://www.youtube.com/embed/WEVCvkId4ZU?autoplay=1;rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="27" name="hidden link test" tags="" position="1660.3333333333333,387.6666666666667" size="100,100">text except for a (link: &quot;book left behind on the first seat.&quot;) [book that fans open as you pick itup, revealing a [[tiny door|exit]] drawn on the page.] There are four windows, two on the [[left side|left windows]] of the train and two on the [[right|right windows]], though all of them appear to be locked.
-
-text (link: &quot;odd hinged door&quot;)[odd hinged door that breaks off in your hand when you try to open it.] </tw-passagedata><tw-passagedata pid="28" name="Farmer Sons Story" tags="farm" position="1240.3333333333333,270.6666666666667" size="100,100">&#39;&#39;A story about a farmer and his 2 sons&#39;&#39;
+&lt;iframe width=&quot;1&quot; height=&quot;1&quot; src=&quot;https://www.youtube.com/embed/WEVCvkId4ZU?autoplay=1;rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="19" name="Farmer Sons Story" tags="farm" position="1240,270" size="100,100">&#39;&#39;A story about a farmer and his 2 sons&#39;&#39;
 
 Two sons work for their father on the family&#39;s farm. The younger brother had for some years been given more responsibility and reward, and one day the older brother asks his father to explain why?
 
@@ -548,7 +512,7 @@ The younger son soon returns with the answer, &quot;Yes, they have five Geese fo
 
 The father turned to the older son, who nodded his head in appreciation. He now realized why his younger brother was given more responsibility and reward.
 
-[[Makes sense-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="29" name="Intro" tags="" position="239,243" size="100,100">You sit in on the couch in your livingroom thinking back to the good times with your friends last time around. You really enjoyed it. It was at Sam&#39;s place. The food was nice the conversations and company was great.  
+[[Makes sense-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="20" name="Intro" tags="" position="239,243" size="100,100">You sit in on the couch in your livingroom thinking back to the good times with your friends last time around. You really enjoyed it. It was at Sam&#39;s place. The food was nice the conversations and company was great.  
 
 (link:&quot;Come to think of it...&quot;)[It is really nice to meet with friends and have a meal together. 
 
@@ -567,20 +531,21 @@ You see:
 * What to serve?
 
 [[...and you think-&gt;Intro 2]]
-]]]</tw-passagedata><tw-passagedata pid="30" name="Justify Clip" tags="" position="1044,545.6666666666666" size="100,100">&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
+]]]</tw-passagedata><tw-passagedata pid="21" name="Justify Clip" tags="" position="1044,545" size="100,100">&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-YZeKlsCilM?rel=0&amp;amp;controls=0&amp;amp;start=28;end=100;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(1 min. 12 sec.)
 
 (if: $inv contains &quot;Justify&quot;)[Déjà vu?]
 (else:)[
 (link: &quot;Awareness&quot;) [You get the picture of &#39;Justify&#39;(set: $inv to $inv + (a: &quot;Justify&quot;))  ] ]
 
-[[Return-&gt;Justify]]</tw-passagedata><tw-passagedata pid="31" name="Lay Blame Intro" tags="" position="650,663" size="100,100">So who could have done this to you?
+[[Return-&gt;Justify]]</tw-passagedata><tw-passagedata pid="22" name="Lay Blame Intro" tags="" position="650,663" size="100,100">So who could have done this to you?
 
 (link: &quot;Maybe...&quot;)
 [Maybe your cat [[Simon-&gt;Lay Blame]]? 
 Yes it must be your [[Cat-&gt;Lay Blame]]!] 
-</tw-passagedata><tw-passagedata pid="32" name="Not Convincing" tags="donotshowinventory liedetection" position="1211.3333333333333,960.6666666666666" size="100,100">Lets check the read out of the lying detection (link: &quot;machine!&quot;)[
+</tw-passagedata><tw-passagedata pid="23" name="Not Convincing" tags="donotshowinventory liedetection" position="1211,960" size="100,100">Lets check the read out of the lying detection (link: &quot;machine!&quot;)[
 
 &quot;Based on (either: &quot;breathing irregularity measured&quot;, &quot;eye movement tracking analysis&quot;, &quot;Micro Body temperature fluxtuations measured&quot;, &quot;Computer-mouse micro gestures tracked&quot;,&quot;Facial Action detection&quot;) the machine assesses you to lie with a likelihood of:(either: &quot; 78%&quot;, &quot; 99.999%&quot;,&quot; it is off the scale!&quot;,&quot;... Do you really want to know?&quot;,&quot;99.8%&quot;)
 
@@ -589,7 +554,7 @@ Yes it must be your [[Cat-&gt;Lay Blame]]!]
 ]
 
 
-</tw-passagedata><tw-passagedata pid="33" name="Search Key" tags="donotshowinventory searchkey" position="174,678" size="100,100">(set: $cntkeysearch to it + 1)
+</tw-passagedata><tw-passagedata pid="24" name="Search Key" tags="donotshowinventory searchkey" position="174,678" size="100,100">(set: $cntkeysearch to it + 1)
 
 (if: $cntkeysearch is 1)[No, the keys are not here.]
 (if: $cntkeysearch is 2)[Ok, second attempt, no keys here.]
@@ -604,7 +569,7 @@ But the keys are not here.]
 (if: $cntkeysearch &gt; 8)[...you know the (link:&quot;drill&quot;)[no keys here]...]
 
 (link-goto: &quot;Return&quot;, (history:)&#39;s last) 
-</tw-passagedata><tw-passagedata pid="34" name="Justify Intro" tags="" position="649,553" size="100,100">Where are those car keys?
+</tw-passagedata><tw-passagedata pid="25" name="Justify Intro" tags="" position="649,553" size="100,100">Where are those car keys?
 
 You can see Simons ears turn a bit toward you, but that is all the interest you can expect from him right now. No sound that hints that food is prepared...
 
@@ -624,7 +589,7 @@ Pick the right answer, but be carefull!
 [[Answer 2 and 3 are true-&gt;Justify]]
 [[Answer 1 is true and 2 is false-&gt;Justify]]
 [[All answers are true-&gt;Justify]]
-</tw-passagedata><tw-passagedata pid="35" name="Denial Intro" tags="" position="100,808" size="100,100">(either:&quot;Oh look how cute the kitten climbs up the leg of the poor dog...&quot;,&quot;and I really need to get some of those cool...&quot;, &quot;wonder what &quot; + (either: &quot;Beyoncé&quot;,&quot;Elon Musk&quot;,&quot;Lionel Messi&quot;) + &quot; is eating today...&quot;, &quot;See him going, great show&quot;, &quot;wonder what&quot;)
+</tw-passagedata><tw-passagedata pid="26" name="Denial Intro" tags="" position="35,694" size="100,100">(either:&quot;Oh look how cute the kitten climbs up the leg of the poor dog...&quot;,&quot;and I really need to get some of those cool...&quot;, &quot;wonder what &quot; + (either: &quot;Beyoncé&quot;,&quot;Elon Musk&quot;,&quot;Lionel Messi&quot;) + &quot; is eating today...&quot;, &quot;See him going, great show&quot;, &quot;wonder what&quot;)
 
 fake news
 
@@ -635,11 +600,11 @@ advertisments
 More advertisements.
 
 [[What is happening?-&gt;Denial]]
-[[Ok, get a grip and snap out of it!-&gt;Intro 2]]</tw-passagedata><tw-passagedata pid="36" name="Shame Intro" tags="" position="648,443" size="100,100">I&#39;m really bad with planning, if I had put it on the calendar the shopping was done in time. How stupid I am, Simon seems to nod to you: 
+[[Ok, get a grip and snap out of it!-&gt;Intro 2]]</tw-passagedata><tw-passagedata pid="27" name="Shame Intro" tags="" position="648,443" size="100,100">I&#39;m really bad with planning, if I had put it on the calendar the shopping was done in time. How stupid I am, Simon seems to nod to you: 
 
 [[I should have known better-&gt;Shame]]
 [[I&#39;m such a ...-&gt;Shame]]
-[[I deserve these concequences-&gt;Shame]]</tw-passagedata><tw-passagedata pid="37" name="Quick Path To Justify" tags="" position="518,560" size="100,100">Interesting, you did not shoose to blame somebody else but you choose to blame the circumstances.
+[[I deserve these concequences-&gt;Shame]]</tw-passagedata><tw-passagedata pid="28" name="Quick Path To Justify" tags="" position="518,560" size="100,100">Interesting, you did not shoose to blame somebody else but you choose to blame the circumstances.
 
 It shows that your are a normal human being, as a matter of fact blaming somebody is also perfectly normal human behaviour.
 
@@ -649,7 +614,7 @@ When something is not going as expected we are hard wired to get out of this sit
 (else:)[(set: $inv to $inv + (a: &quot;Lay Blame&quot;))]
 
 
-[[Ok-&gt;Justify Intro]]</tw-passagedata><tw-passagedata pid="38" name="Obligation Intro" tags="" position="643,333" size="100,100">Your mother raised you to be a proper host!
+[[Ok-&gt;Justify Intro]]</tw-passagedata><tw-passagedata pid="29" name="Obligation Intro" tags="" position="643,314" size="100,100">Your mother raised you to be a proper host!
 
 She told you to do your shopping in time. When having guest over you do shopping you do cleaning and you make sure everything is ready.
 
@@ -661,28 +626,28 @@ You feel:
 (link:&quot;Forced&quot;)[Yes you should feel!]
 (link:&quot;Blank&quot;)[Like ?]
 
-[[Obligation]]</tw-passagedata><tw-passagedata pid="39" name="Responsibility Intro" tags="" position="643,185" size="100,100">All kinds of ideas pop up in your mind, some quite funny, others radical or almost impossible, some not ethical etc, etc. This is &quot;good&quot; creativity pops in...
+[[Obligation]]</tw-passagedata><tw-passagedata pid="30" name="Responsibility Intro" tags="" position="643,185" size="100,100">All kinds of ideas pop up in your mind, some quite funny, others radical or almost impossible, some not ethical etc, etc. This is &quot;good&quot; creativity pops in...
 
-{(live: 0.5s)[
-    (either: &quot;American Party!&quot;, &quot;Call 112 or 911!&quot;, &quot;Put Simon on the BBQ (Sauce, fingernails, tail raised...NO GO!)&quot;, &quot;Starve to dead!&quot;,&quot;Search Spare key&quot;,&quot;Credit Card&quot;, &quot;Steal vegetables from the neighbours garden&quot;,&quot;Take the bike&quot;,&quot;Borrow car from the neigbour&quot;,&quot;Search Road Kill&quot;,&quot;Left overs from the garbage can?&quot;,&quot;Convince friend that it is a day of fasting (quickly find the web page)&quot;)
+{(live: 1s)[
+    (either: &quot;American Party!&quot;, &quot;Call 112 or 911!&quot;, &quot;Put Simon on the BBQ, with sauce...  ...NO GO!&quot;, &quot;Starve to dead!&quot;,&quot;Search Spare key&quot;,&quot;Credit Card&quot;, &quot;Steal vegetables from the neighbours garden&quot;,&quot;Take the bike&quot;,&quot;Borrow car from the neigbour&quot;,&quot;Search Road Kill&quot;,&quot;Left overs from the garbage can?&quot;,&quot;Convince friends that it is a day of fasting&quot;)
 ]}
 
 It doenst really matter what you choose...
 
 Important is that you make a decision to some how solve it, to own it. You will start asking questions or look for help to get the problem resolved.
 
-[[Responsibility]]</tw-passagedata><tw-passagedata pid="40" name="Problem" tags="teaching" position="664,1055.3333333333335" size="100,100">Right! Something is going wrong we have a problem.
+[[Responsibility]]</tw-passagedata><tw-passagedata pid="31" name="Problem" tags="teaching" position="664,1055" size="100,100">Right! Something is going wrong we have a problem.
 
 How did this happen to us?
 
 This is a very common reaction. When you discover that something is going wrong your mind starts a cause-effect-search. We start coping with the mismatch between what we want and the problem we have.
 
-[[Continue-&gt;Lay Blame Intro]]</tw-passagedata><tw-passagedata pid="41" name="End" tags="" position="1240.3333333333333,161.66666666666666" size="100,100">&#39;&#39;You reached the last page&#39;&#39;
+[[Continue-&gt;Lay Blame Intro]]</tw-passagedata><tw-passagedata pid="32" name="End" tags="" position="1240,161" size="100,100">&#39;&#39;You reached the last page&#39;&#39;
 
 You {
 (if: (history:) contains &quot;The model&quot;)[
     walked, as explained before the Responsibility model that looks like the following:
-](else-if: (history:) contains &quot;Get Links&quot;)[
+](else-if: $link&#39;s length &gt; 0)[
     did some sheating as you were in a hurry I guess. I hope you learned about all the coping stages as shown in the following model:
 ](else:)[
     have been walking a path through the Responsibility process during this game. The full model looks like the following:
@@ -719,25 +684,27 @@ To make it perfect for &#39;&#39;me&#39;&#39;: ...
 
 Please let me know
 
-&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdA2YeRja3Jgugy1VDIV4qg5EKp2bM1__hxMo2EFCkvbWE3AQ/viewform?usp=sf_link&quot;&gt;your feedback&lt;/a&gt;</tw-passagedata><tw-passagedata pid="42" name="Shame clip" tags="" position="1043.3333333333333,433.3333333333333" size="100,100">&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
+&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdA2YeRja3Jgugy1VDIV4qg5EKp2bM1__hxMo2EFCkvbWE3AQ/viewform?usp=sf_link&quot;&gt;your feedback&lt;/a&gt;</tw-passagedata><tw-passagedata pid="33" name="Shame clip" tags="" position="1043,433" size="100,100">&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
 
 refuse to shame our self
 
-video
+video (no video yet)
 
 (if: $inv contains &quot;Shame&quot;)[Déjà vu?]
 (else:)[
 (link:&quot;Get the keys out of shame&quot;)[I feel shamed but I can refuse that.(set: $inv to $inv + (a: &quot;Shame&quot;))  ] ]
 
-[[Return-&gt;Shame]]</tw-passagedata><tw-passagedata pid="43" name="Obligation clip" tags="" position="1043.3333333333333,316.6666666666667" size="100,100">Obligation follows from being held accountable. Being held accountable is an external force.
+[[Return-&gt;Shame]]</tw-passagedata><tw-passagedata pid="34" name="Obligation clip" tags="" position="1043,316" size="100,100">Obligation follows from being held accountable. Being held accountable is an external force.
 
 When you see that something need to happen not because you where told but because to see a shared responisibility like: our customer will be hit. 
 
 A little language change...
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZQxeYuf4grE?rel=0&amp;amp;showinfo=0&amp;amp;start=505;end=526&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(21 sec.)
 
 Accountability &lt;&gt; Responsability
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/to6HBpe1wdY?rel=0&amp;amp;showinfo=0&amp;amp;start=34&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/to6HBpe1wdY?rel=0&amp;amp;showinfo=0&amp;amp;start=34;end=136&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(1 min. 42 sec.)
 
 (if: $inv contains &quot;Obligation&quot;)[Déjà vu?]
 (else:)[
@@ -746,33 +713,31 @@ Accountability &lt;&gt; Responsability
 [[Return-&gt;Obligation]]
 
 &lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="44" name="startup" tags="startup" position="103,102.33333333333334" size="100,100">(set: $inv to (a:))
+</tw-passagedata><tw-passagedata pid="35" name="startup" tags="startup" position="103,102" size="100,100">(set: $inv to (a:))
 (set: $link to (a:))
 (set: $cntkeysearch to 0)
 (set: $quote to (a:))
 (set: $startDate to My.currentDate())
 (set: $cntquestion to 0)
-(set: $cntscore to 0)</tw-passagedata><tw-passagedata pid="45" name="Get Links" tags="teaching" position="358,360" size="100,100">The Responsibility model tries to explain what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
+(set: $cntscore to 0)</tw-passagedata><tw-passagedata pid="36" name="Get Links" tags="teaching" position="358,360" size="100,100">The Responsibility model tries to explain what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
 
 Because you have chosen to be in a hurry we can grant you access to all stages in the model...
 
-Off course, as they say: with great power comes great responibility.
+Off course, as they say: with great power comes great responsibility.
 
-Do you want to carry the responibility?
+Do you want to carry the responsibility?
 [[No, I did not expect that, get me out of here!-&gt;Start]]
 (link: &quot;Yes, I take it.&quot;) [
-(set: $link to $link + (a: &quot;[[Problem]]&quot;))
-(set: $link to $link + (a: &quot;[[Denial]]&quot;))
-(set: $link to $link + (a: &quot;[[Lay Blame]]&quot;))
-(set: $link to $link + (a: &quot;[[Justify]]&quot;))
-(set: $link to $link + (a: &quot;[[Shame]]&quot;))
+{(set: $link to $link + (a: &quot;[[Responsibility]]&quot;))
 (set: $link to $link + (a: &quot;[[Obligation]]&quot;))
-(set: $link to $link + (a: &quot;[[Responsibility]]&quot;))
-Ok, granted.
-
-Check what you have learned... 
+(set: $link to $link + (a: &quot;[[Shame]]&quot;))
+(set: $link to $link + (a: &quot;[[Justify]]&quot;))
+(set: $link to $link + (a: &quot;[[Lay Blame]]&quot;))
+(set: $link to $link + (a: &quot;[[Denial]]&quot;))
+(set: $link to $link + (a: &quot;[[Problem]]&quot;))}
+Ok, granted. [[Use your direct access links-&gt;Links]]
 ]
-</tw-passagedata><tw-passagedata pid="46" name="The model" tags="donotshowinventory teaching" position="895.3333333333334,934.6666666666666" size="100,100">Agile doesn&#39;t deliver well without widespread ownership behaviour. Personal and shared responsibility, widely demonstrated throughout the enterprise, provides the essential context and lubricant for agility. 
+</tw-passagedata><tw-passagedata pid="37" name="The model" tags="donotshowinventory teaching" position="895,934" size="100,100">Agile doesn&#39;t deliver well without widespread ownership behaviour. Personal and shared responsibility, widely demonstrated throughout the enterprise, provides the essential context and lubricant for agility. 
 
 Things hum.
 
@@ -811,26 +776,27 @@ The first six mental states (Denial, Lay Blame, Justify, Shame, Obligation, and 
 
 The mental state—Responsibility—is the mental state in which we grow to overcome problems.]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="47" name="Quit Obligation" tags="donotshowinventory" position="1199.6666666666665,410" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility-Process-quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="38" name="Quit Obligation" tags="donotshowinventory" position="1199,410" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility-Process-quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 You give up! you quit! You want to avoid the pain of Obligation...
 
-Natural, but not resourceful The problem hasn’t gone away – I’m still hurting. I can’t do anything about it. 
+A natural reaction, but not resourceful. The problem hasn’t gone away – I’m still hurt. I can’t do anything about it. 
 
 [[Some inspirational stuff maybe?-&gt;Inspiration Obligation]]
 
-[[I can take ownership!-&gt;Obligation]]</tw-passagedata><tw-passagedata pid="48" name="Inspiration Obligation" tags="donotshowinventory kidwithplane" position="1331,673.6666666666666" size="100,100">Freedom and responsibility aren&#39;t interconnected things. 
+[[I can take ownership!-&gt;Obligation]]</tw-passagedata><tw-passagedata pid="39" name="Inspiration Obligation" tags="donotshowinventory kidwithplane" position="1331,673" size="100,100">Freedom and responsibility aren&#39;t interconnected things. 
 They are the same thing.
 
 - Harry Browne 
 
 
 
-[[Ok lets get back-&gt;Quit Obligation]]</tw-passagedata><tw-passagedata pid="49" name="Mindfulness" tags="" position="305,708" size="100,100">You are not aware of an issue. Some say this is ignoring the problem, but it’s really not even knowing there is an issue to contend with.
+[[Ok lets get back-&gt;Quit Obligation]]</tw-passagedata><tw-passagedata pid="40" name="Mindfulness" tags="" position="305,708" size="100,100">You are not aware of an issue. Some say this is ignoring the problem, but it’s really not even knowing there is an issue to contend with.
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="50" name="Intro 2" tags="" position="205,372" size="100,100">[[what to cook? The fridge is nearly empty!-&gt;Go]]
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="41" name="Intro 2" tags="" position="205,372" size="100,100">[[what to cook? The fridge is nearly empty!-&gt;Go]]
 (link: &quot;I don&#39;t like this story!&quot;) [Sure, you are entitled to this opinion...]
-[[Lets check my social media for a moment-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="51" name="Responsibility clip" tags="" position="1044.3333333333333,181.33333333333331" size="100,100">The following clip may look absurd but actual taking the step to responsibilty can be very simple step (but maybe not so comfortable to take). 
+[[Lets check my social media for a moment-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="42" name="Responsibility clip" tags="" position="1044,181" size="100,100">The following clip may look absurd but actual taking the step to responsibilty can be very simple step (but maybe not so comfortable to take). 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D-vYVlXrJCw?rel=0&amp;amp;start=0;end=97;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(4 min. 5 sec.)
 
 [[How does responsibility look like, a story-&gt;Farmer Sons Story]]
 [[I feel like doing a quiz-&gt;Quiz]]
@@ -841,8 +807,7 @@ They are the same thing.
 
 [[End-&gt;End]]
 
-</tw-passagedata><tw-passagedata pid="52" name="Loopy" tags="" position="1714.3333333333333,181.66666666666666" size="100,100">&lt;iframe width=&quot;500&quot; height=&quot;440&quot; frameborder=&quot;0&quot; src=&quot;http://ncase.me/loopy/v1.1/?embed=1&amp;data=[[[1,556,234,1,%22Feature%2520velocity%22,4],[3,727,158,0.5,%22%2523%2520of%2520developers%22,0],[4,361,376,0.5,%22Code%2520Quality%22,0],[5,573,437,0.5,%22%2523%2520defects%22,0]],[[3,1,-61,1,0],[4,1,86,1,0],[1,5,51,1,0],[5,4,202,-1,0],[5,1,50,-1,0]],[],5%5D&quot;&gt;&lt;/iframe&gt;
-</tw-passagedata><tw-passagedata pid="53" name="Quiz" tags="" position="1478.3333333333333,674.6666666666666" size="100,100">(if: $cntquestion is 0)[For each right answer you can score 10 points!]
+</tw-passagedata><tw-passagedata pid="43" name="Quiz" tags="" position="1478,674" size="100,100">(if: $cntquestion is 0)[For each right answer you can score 10 points!]
 (set: $cntquestion to it + 1)
 (if: $cntquestion is 1)[1: In what order are humans going trough the coping stages according to &quot;the responibility process&quot; when they encounter a problem (something is not going as expected)?
 
@@ -855,7 +820,7 @@ They are the same thing.
 
 [[No need, I&#39;m perfect it is always somebody else-&gt;wrong]]
 [[Recoginizing your self laying blame-&gt;right]]
-[[I don&#39;t know-&gt;right]]
+[[I don&#39;t know-&gt;right special]]
 ]
 (if: $cntquestion is 3)[3: question 3?
 
@@ -872,14 +837,12 @@ They are the same thing.
 (if: $cntquestion &gt;= 5)[You completed the Quiz and your final score is: $cntscore
 [[Return-&gt;Responsibility clip]]
 ]
-</tw-passagedata><tw-passagedata pid="54" name="right" tags="donotshowinventory" position="1399,943.6666666666666" size="100,100">(if: $cntquestion is not 2)[Yes, you selected the right answer!]
+</tw-passagedata><tw-passagedata pid="44" name="right" tags="donotshowinventory" position="1400,855" size="100,100">Yes, you selected the right answer!
 (set: $cntscore to it + 10)
-
-(if: $cntquestion is 2)[2: Stepping away from Lay Blame to Justify or hopping back an forth between these two might be very unconciously happening. Recognizing that you are actually Laying blame to somebody else and making the decision to refuse this bring you ahead. You score 10 points for being honest!]
 
 Total score: $cntscore
 
-[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="55" name="wrong" tags="donotshowinventory" position="1622.3333333333333,944.6666666666666" size="100,100">No, that is not the correct answer.
+[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="45" name="wrong" tags="donotshowinventory" position="1570,856" size="100,100">No, that is not the correct answer.
 
 (if: $cntquestion is 1)[1: Humans going trough the coping stages as following: Blame&gt;Justify&gt;Shame&gt;Obligation&gt;Responsibility]
 (if: $cntquestion is 2)[2: When you discover that there actually no one to blame you can step away from Lay Blame.]
@@ -890,7 +853,7 @@ No points scored.
 
 Total score: $cntscore
 
-[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="56" name="Problem between" tags="" position="646.6666666666666,52.333333333333485" size="100,100">You might think that somebody else is your problem in cases were as a matter of fact the problem is not on their or your side but in between you. 
+[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="46" name="Problem between" tags="" position="848,54" size="100,100">You might think that somebody else is your problem in cases were as a matter of fact the problem is not on their or your side but in between you. 
 &lt;img src=&quot;resources/problem-between.png&quot; alt=&quot;Problem between&quot; style=&quot;height:378px;&quot;&gt;
 
 Problem between explained
@@ -898,7 +861,20 @@ Problem between explained
 
 Does this hurt for you the way it does for us?
 
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="47" name="right special" tags="donotshowinventory" position="1455,979" size="100,100">(set: $cntscore to it + 10)
+
+(if: $cntquestion is 2)[Stepping away from Lay Blame to Justify or hopping back an forth between these two might be very unconciously happening. Recognizing that you are actually Laying blame to somebody else and making the decision to refuse this bring you ahead. You score 10 points for being honest!]
+
+Total score: $cntscore
+
+[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="48" name="Links" tags="inventory donotshowinventory" position="295,1144" size="100,100">Time passed: {(live: 0.3s)[(print: My.timeSinceStr($startDate))]}
+
+(if: $link&#39;s length &gt; 0)[Direct access links:
+
+(print: $link.join(&quot;\n &quot;)).]
+(else:)[]
+
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
