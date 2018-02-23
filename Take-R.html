@@ -59,6 +59,10 @@ tw-story[tags~="inventory"] {
  background-image:url("resources/openmind.jpg");
  background-size:cover;
 }
+tw-story[tags~="links"] {
+ background-image:url("resources/highfive.jpg");
+ background-size:cover;
+}
 tw-story[tags~="searchkey"] {
  background-image:url("resources/room_mess.jpg");
  background-size:cover;
@@ -81,6 +85,8 @@ tw-story[tags~="teaching"] {
   /*background-color: #3a4350; original*/
   background-color: #1a2330; 
 }
+
+
 
 
 
@@ -283,6 +289,8 @@ if (! window.My) {
 
 
 
+
+
 </script><tw-passagedata pid="1" name="Go" tags="" position="339,558" size="100,100">You have friends coming for diner tonight and you still need to do some big shopping.
 
 But Darn, where are your car keys? You alway put them on the desk next to your laptop!
@@ -357,7 +365,7 @@ What happens when we [[lay blame-&gt;Lay Blame Clip]]?
 
 How are [[companies|Lay Blame Company Clip]] taking care of this?
 
-(if: $inv contains &quot;Lay Blame&quot;)[Oh! Now you can see when you are laying blame lets [[Investigate-&gt;Justify Intro]]. more.]
+(if: $inv contains &quot;Lay Blame&quot;)[Oh! Now you can see when you are laying blame lets [[Investigate-&gt;Justify Intro]] more.]
 (else:)[There seems no way out if you stay in blame...]</tw-passagedata><tw-passagedata pid="9" name="Justify" tags="teaching" position="849,554" size="100,100">&lt;img src=&quot;resources/stage/justify.png&quot; alt=&quot;Responsibility-Process-justify&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Justify we use excuses for things being the way they are&#39;&#39;
 
@@ -372,7 +380,7 @@ It is the economy
 It is the management
 It is the culture
 
-(if: $inv contains &quot;Justify&quot;)[Yes! Now you can see when you are justifying on circumstances [[Investigate-&gt;Shame Intro]]. more.]
+(if: $inv contains &quot;Justify&quot;)[Yes! Now you can see when you are justifying on circumstances [[Investigate-&gt;Shame Intro]] more.]
 (else:)[There seems no way out if you stay in justify...]</tw-passagedata><tw-passagedata pid="10" name="Shame" tags="teaching" position="851,438" size="100,100">&lt;img src=&quot;resources/stage/shame.png&quot; alt=&quot;Responsibility-Process-shame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Shame we lay blame on ourselves (often felt as guilt)&#39;&#39;
 
@@ -696,7 +704,7 @@ video (no video yet)
 
 [[Return-&gt;Shame]]</tw-passagedata><tw-passagedata pid="34" name="Obligation clip" tags="" position="1043,316" size="100,100">Obligation follows from being held accountable. Being held accountable is an external force.
 
-When you see that something need to happen not because you where told but because to see a shared responisibility like: our customer will be hit. 
+What would happen when you see that something need to happen not because you where told but because to see a shared responisibility like: our customer will be hit. 
 
 A little language change...
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZQxeYuf4grE?rel=0&amp;amp;showinfo=0&amp;amp;start=505;end=526&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
@@ -713,19 +721,19 @@ Accountability &lt;&gt; Responsability
 [[Return-&gt;Obligation]]
 
 &lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="35" name="startup" tags="startup" position="103,102" size="100,100">(set: $inv to (a:))
+</tw-passagedata><tw-passagedata pid="35" name="startup" tags="startup" position="103,102" size="100,100">{(set: $inv to (a:))
 (set: $link to (a:))
 (set: $cntkeysearch to 0)
 (set: $quote to (a:))
 (set: $startDate to My.currentDate())
 (set: $cntquestion to 0)
-(set: $cntscore to 0)</tw-passagedata><tw-passagedata pid="36" name="Get Links" tags="teaching" position="358,360" size="100,100">The Responsibility model tries to explain what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
+(set: $cntscore to 0)}</tw-passagedata><tw-passagedata pid="36" name="Get Links" tags="teaching" position="358,360" size="100,100">You are in a hurry!
 
-Because you have chosen to be in a hurry we can grant you access to all stages in the model...
+The story is created for you to experiance The Responsibility process. Showing you what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
 
-Off course, as they say: with great power comes great responsibility.
+If you like we can grant you access to all levels in one go. Off course, as they say: with great power comes great responsibility.
 
-Do you want to carry the responsibility?
+(if: $link.length &gt; 0 )[[[Use your direct access links-&gt;Links]] or go to [[Start-&gt;Start]]](else:)[Do you want to carry the responsibility?
 [[No, I did not expect that, get me out of here!-&gt;Start]]
 (link: &quot;Yes, I take it.&quot;) [
 {(set: $link to $link + (a: &quot;[[Responsibility]]&quot;))
@@ -735,8 +743,7 @@ Do you want to carry the responsibility?
 (set: $link to $link + (a: &quot;[[Lay Blame]]&quot;))
 (set: $link to $link + (a: &quot;[[Denial]]&quot;))
 (set: $link to $link + (a: &quot;[[Problem]]&quot;))}
-Ok, granted. [[Use your direct access links-&gt;Links]]
-]
+Ok, granted. [[Use your direct access links-&gt;Links]] or go to [[start-&gt;Start]]]]
 </tw-passagedata><tw-passagedata pid="37" name="The model" tags="donotshowinventory teaching" position="895,934" size="100,100">Agile doesn&#39;t deliver well without widespread ownership behaviour. Personal and shared responsibility, widely demonstrated throughout the enterprise, provides the essential context and lubricant for agility. 
 
 Things hum.
@@ -796,7 +803,7 @@ They are the same thing.
 (link: &quot;I don&#39;t like this story!&quot;) [Sure, you are entitled to this opinion...]
 [[Lets check my social media for a moment-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="42" name="Responsibility clip" tags="" position="1044,181" size="100,100">The following clip may look absurd but actual taking the step to responsibilty can be very simple step (but maybe not so comfortable to take). 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D-vYVlXrJCw?rel=0&amp;amp;start=0;end=97;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-(4 min. 5 sec.)
+(1 min. 37 sec.)
 
 [[How does responsibility look like, a story-&gt;Farmer Sons Story]]
 [[I feel like doing a quiz-&gt;Quiz]]
@@ -867,7 +874,7 @@ Does this hurt for you the way it does for us?
 
 Total score: $cntscore
 
-[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="48" name="Links" tags="inventory donotshowinventory" position="295,1144" size="100,100">Time passed: {(live: 0.3s)[(print: My.timeSinceStr($startDate))]}
+[[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="48" name="Links" tags="donotshowinventory links" position="295,1144" size="100,100">Time passed: {(live: 0.3s)[(print: My.timeSinceStr($startDate))]}
 
 (if: $link&#39;s length &gt; 0)[Direct access links:
 
