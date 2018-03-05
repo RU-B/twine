@@ -467,7 +467,7 @@ Natural, but not resourceful Somebody else has to change for things to get bette
 
 &lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Footer" tags="header" position="193,969" size="100,100">(if: (passage:)&#39;s name is &quot;Inventory&quot;)[&lt;!--Do nothing--&gt;]
 (else-if: (passage:)&#39;s tags contains &quot;donotshowinventory&quot;)[&lt;!--Do nothing--&gt;]
-(else:)[&lt;div style=&quot;padding:10px; border: 1px solid gray;&quot;&gt;Progress: &lt;my-hl&gt;(print: $inv.length*20)%&lt;/my-hl&gt; - (if: $inv.length &gt;0 )[[[learned-&gt;Learned]]](else:)[learned nothing] (if: $link.length &gt;0 )[ - [[links-&gt;Links]]](else:)[] &lt;/div&gt;
+(else:)[&lt;div style=&quot;padding:10px; border: 1px solid gray;&quot;&gt;Progress: &lt;my-hl&gt;(print: $inv.length*20)%&lt;/my-hl&gt; - (if: $inv.length &gt;0 )[[[learned-&gt;Learned]]](else:)[learned nothing] (if: $link.length &gt;0 )[ - [[Direct access links-&gt;Links]]](else:)[] &lt;/div&gt;
 
 ]
 
@@ -733,7 +733,7 @@ Accountability &lt;&gt; Responsability
 (set: $cntquestion to 0)
 (set: $cntscore to 0)}</tw-passagedata><tw-passagedata pid="36" name="Get Links" tags="teaching" position="358,360" size="100,100">You are in a hurry!
 
-The story is created for you to experiance The Responsibility process. Showing you what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
+The story is created for you to experience The Responsibility process. Showing you what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
 
 If you like we can grant you access to all levels in one go. Off course, as they say: with great power comes great responsibility.
 
@@ -883,7 +883,6 @@ Total score: $cntscore
 [[Next-&gt;Quiz]]</tw-passagedata><tw-passagedata pid="48" name="Links" tags="donotshowinventory links" position="295,1144" size="100,100">Time passed: {(live: 0.3s)[(print: My.timeSinceStr($startDate))]}
 
 (if: $link&#39;s length &gt; 0)[Direct access links:
-
 (print: $link.join(&quot;\n &quot;)).]
 (else:)[]
 
