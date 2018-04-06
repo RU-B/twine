@@ -162,6 +162,17 @@ tw-story[tags~="teaching"] {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">if(typeof YouTubeTunes == "undefined"){
 $('body').append('<div id="youtubetunes"></div>');
 
@@ -303,7 +314,18 @@ if (! window.My) {
 
 
 
-</script><tw-passagedata pid="1" name="Go" tags="" position="347.3333333333333,633" size="100,100">You have friends coming for diner tonight and you still need to do some big shopping. But Darn, where are your car keys? You always put them on the desk next to your laptop!
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Go" tags="" position="347,633" size="100,100">You have friends coming for dinner tonight and you still need to do some big shopping. But darn, where are your car keys? You always put them on the desk next to your laptop!
 
 [[Check the floor-&gt;Search Key]]
 [[Look under the piles of paper on your desk-&gt;Search Key]]
@@ -311,54 +333,59 @@ if (! window.My) {
 [[Look under the couch-&gt;Search Key]]
 
 (if: $cntkeysearch &gt; 3)[How do you feel?
-* [[upset-&gt;Problem]]
-* [[frustrated-&gt;Problem]]
-* [[anxious-&gt;Problem]]
+* [[Upset-&gt;Problem]]
+* [[Frustrated-&gt;Problem]]
+* [[Anxious-&gt;Problem]]
 * [[Ehm...-&gt;Mindfulness]]
 ]</tw-passagedata><tw-passagedata pid="2" name="Inspiration Shame" tags="donotshowinventory" position="1342,1133" size="100,100">Check out what some famous people said about Responsibility:
 
 [[Abraham Lincoln]]
 [[Winston Churchill]]
 [[Christopher Avery]]
+[[John Seddon]]
 
 [[Take a closer look at responsibility-&gt;R the word]]
 
-[[Ok lets get back-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="3" name="R the word" tags="donotshowinventory" position="1464,1274" size="100,100">Take a look for a moment at the word Responsability
+[[Ok lets get back-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="3" name="R the word" tags="donotshowinventory" position="1464,1274" size="100,100">Take a look for a moment at the word Responsibility
 
-Respons - Ability
+Response - Ability
 
-Maybe some more to explain here...
-
-[[Ok I get that-&gt;Inspiration Shame]]</tw-passagedata><tw-passagedata pid="4" name="Abraham Lincoln" tags="donotshowinventory" position="1113,1432" size="100,100">&quot;You cannot escape the responsibility of tomorrow by evading it today.&quot;
+[[Ok I get that-&gt;Inspiration Shame]]</tw-passagedata><tw-passagedata pid="4" name="Abraham Lincoln" tags="donotshowinventory quote" position="1113,1432" size="100,100">&quot;You cannot escape the responsibility of tomorrow by evading it today.&quot;
 
 [[Ok-&gt;Inspiration Shame]]
 
 
-(if: $inv contains &quot;lincoln&quot;)[Déjà vu?]
+(if: $quote contains &quot;lincoln&quot;)[Déjà vu?]
 (else:)[
 (set: $quote to $quote + (a: &quot;lincoln&quot;)) 
-]</tw-passagedata><tw-passagedata pid="5" name="Winston Churchill" tags="donotshowinventory" position="1225,1432" size="100,100">&quot;The price of greatness is responsibility&quot;
+]
+
+//Abraham Lincoln was an American statesman and lawyer who served as the 16th President of the United States from March 1861 until his assassination in April 1865.//</tw-passagedata><tw-passagedata pid="5" name="Winston Churchill" tags="donotshowinventory quote" position="1225,1432" size="100,100">&quot;The price of greatness is responsibility&quot;
 
 [[Ok-&gt;Inspiration Shame]]
 
-(if: $inv contains &quot;churchill&quot;)[Déjà vu?]
+(if: $quote contains &quot;churchill&quot;)[Déjà vu?]
 (else:)[
 (set: $quote to $quote + (a: &quot;churchill&quot;))
-]</tw-passagedata><tw-passagedata pid="6" name="Christopher Avery" tags="donotshowinventory" position="1336,1431" size="100,100">&quot;Responsibility has to do with how you respond when things go wrong.&quot;
+]
+
+//Sir Winston Leonard Spencer-Churchill KG OM CH TD DL FRS RA was a British statesman, army officer, and writer, who served as Prime Minister of the United Kingdom from 1940 to 1945 and again from 1951//</tw-passagedata><tw-passagedata pid="6" name="Christopher Avery" tags="donotshowinventory quote" position="1336,1431" size="100,100">&quot;Responsibility has to do with how you respond when things go wrong.&quot;
 
 [[Ok-&gt;Inspiration Shame]]
 
-(if: $inv contains &quot;churchill&quot;)[Déjà vu?]
+(if: $quote contains &quot;avery&quot;)[Déjà vu?]
 (else:)[
 (set: $quote to $quote + (a: &quot;avery&quot;))
-]</tw-passagedata><tw-passagedata pid="7" name="Denial" tags="teaching" position="384,952" size="100,100">&lt;img src=&quot;resources/stage/denial.png&quot; alt=&quot;Responsibility-Process-denial&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+]
+
+//Christopher Avery is the CEO of Partnerwerks, Inc., a leadership development firm. earn a Ph.D. in organization science from the University of Texas at Austin and author of “The Responsibility Process”//</tw-passagedata><tw-passagedata pid="7" name="Denial" tags="teaching" position="384,952" size="100,100">&lt;img src=&quot;resources/stage/denial.png&quot; alt=&quot;Responsibility Process diagram denial&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 It seems you are in denial.
 
 &#39;&#39;In Denial we ignore the existence of something.&#39;&#39;
 
 You are not aware of the issue. Some say this is ignoring the problem, but it’s really not even knowing there is an issue to contend with.
 
-[[Return-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="8" name="Lay Blame" tags="teaching" position="849,664" size="100,100">&lt;img src=&quot;resources/stage/layblame.png&quot; alt=&quot;Responsibility-Process-lay-blame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+[[Return-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="8" name="Lay Blame" tags="teaching" position="849,664" size="100,100">&lt;img src=&quot;resources/stage/layblame.png&quot; alt=&quot;Responsibility Process Diagram lay-blame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 When we hold others at fault for causing something you can call this &#39;&#39;Lay Blame&quot;
 
 What happens when we [[lay blame-&gt;Lay Blame Clip]]?
@@ -366,7 +393,7 @@ What happens when we [[lay blame-&gt;Lay Blame Clip]]?
 How are [[companies|Lay Blame Company Clip]] taking care of this?
 
 (if: $inv contains &quot;Lay Blame&quot;)[Oh! Now you can see when you are laying blame lets [[Investigate-&gt;Justify Intro]] more.]
-(else:)[There seems no way out if you stay in blame...]</tw-passagedata><tw-passagedata pid="9" name="Justify" tags="teaching" position="849,554" size="100,100">&lt;img src=&quot;resources/stage/justify.png&quot; alt=&quot;Responsibility-Process-justify&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+(else:)[There seems no way out if you stay in blame...]</tw-passagedata><tw-passagedata pid="9" name="Justify" tags="teaching" position="849,554" size="100,100">&lt;img src=&quot;resources/stage/justify.png&quot; alt=&quot;Responsibility Process diagram justify&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Justify we use excuses for things being the way they are&#39;&#39;
 
 You look for something to blame (i.e., blame circumstances) “It’s just the way things are” = “It’s not my fault”.
@@ -381,12 +408,12 @@ It is the management
 It is the culture
 
 (if: $inv contains &quot;Justify&quot;)[Yes! Now you can see when you are justifying on circumstances [[Investigate-&gt;Shame Intro]] more.]
-(else:)[There seems no way out if you stay in justify...]</tw-passagedata><tw-passagedata pid="10" name="Shame" tags="teaching" position="851,438" size="100,100">&lt;img src=&quot;resources/stage/shame.png&quot; alt=&quot;Responsibility-Process-shame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+(else:)[There seems no way out if you stay in justify...]</tw-passagedata><tw-passagedata pid="10" name="Shame" tags="teaching" position="851,439" size="100,100">&lt;img src=&quot;resources/stage/shame.png&quot; alt=&quot;Responsibility Process diagram shame&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Shame we lay blame on ourselves (often felt as guilt)&#39;&#39;
 
 You blame your self “It’s my fault – I’m rubbish” It’s just the way I am.
 
-Natural, but not resourceful I have to change for things to get better I can’t do anything about it.
+Natural, but not resourceful, I have to change for things to get better I can’t do anything about it.
 
 Language:
 I should have known better
@@ -401,7 +428,7 @@ We think we lack something we need
 (else:)[There seems no way out if you stay in shame...]
 
 
-[[I feel too ashamed-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="11" name="Obligation" tags="teaching" position="850,313" size="100,100">&lt;img src=&quot;resources/stage/obligation.png&quot; alt=&quot;Responsibility-Process-obligation&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+[[I feel too ashamed-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="11" name="Obligation" tags="teaching" position="850,313" size="100,100">&lt;img src=&quot;resources/stage/obligation.png&quot; alt=&quot;Responsibility Process diagram obligation&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Obligation we do what we have to instead of what we want to&#39;&#39;
 
 You do it under duress (against your will, you feel forced) “I have to do it” = “I have no choice”.
@@ -420,7 +447,7 @@ Natural, but not resourceful I’m trapped by circumstances – things won’t g
 
 [[Oh I can&#39;t take it any more-&gt;Quit Obligation]]
 
-•	</tw-passagedata><tw-passagedata pid="12" name="Quit Shame" tags="donotshowinventory" position="1202,567" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility-Process-quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+•	</tw-passagedata><tw-passagedata pid="12" name="Quit Shame" tags="donotshowinventory" position="1202,567" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility Process diagram quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 **In Quit we give up to avoid the pain of Shame**
 
 You pretend it’s not a problem “I can’t take any more – I give up!”.
@@ -431,7 +458,7 @@ A natural reaction, but not resourceful. The problem hasn’t gone away – I’
 
 [[Ok, there is nothing wrong with me-&gt;Shame]]
 
-&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.play(&#39;p5tVIcYsMJc&#39;);&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Responsibility" tags="teaching" position="846,186" size="100,100">&lt;img src=&quot;resources/stage/responsibility.png&quot; alt=&quot;Responsibility-Process-responsibility&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.play(&#39;p5tVIcYsMJc&#39;);&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Responsibility" tags="teaching" position="846,186" size="100,100">&lt;img src=&quot;resources/stage/responsibility.png&quot; alt=&quot;Responsibility Process diagram responsibility&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 &#39;&#39;In Responsibility we own our ability and power to create, choose, and attract&#39;&#39;
 
 I choose to own this. It is under my control. I can and will solve it, once and for all. I will look for the root cause – no sticking plasters. I will work with whoever I need to.
@@ -446,7 +473,7 @@ It is:
 &#39;&#39;Change&#39;&#39; vs Resistance
 &#39;&#39;Value&#39;&#39; vs Waste&lt;/center&gt;
 
-[[Great-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="14" name="Lay Blame Clip" tags="" position="1042,662" size="100,100">Check out the following clip
+[[Great-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="14" name="Lay Blame Clip" tags="" position="1042,660" size="100,100">Check out the following clip
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-T3IZ2ISxag?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;start=178;end=207&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 (29 sec.)
@@ -455,19 +482,18 @@ It is:
 
 Natural, but not resourceful Somebody else has to change for things to get better I can’t do anything about it
 
-(link: &quot;Listen&quot;) [Hear your self say words like: I&#39;m dependent on him or her, They changed..., He... ]
+(link: &quot;Listen&quot;) [Hear your self say words like: I&#39;m depending on him or her, They changed..., He... ]
 
 (if: $inv contains &quot;Lay Blame&quot;)[Déjà vu?]
 (else:)[
 (link: &quot;Awareness&quot;) [Then you realize that Simon is a Sleep-Eat-Litter-repeat kind of cat, it will not touch your keys...
 (set: $inv to $inv + (a: &quot;Lay Blame&quot;))  ] ] ]
 
-
 [[Return-&gt;Lay Blame]] 
 
 &lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;YouTubeTunes.stop();&quot; /&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Footer" tags="header" position="193,969" size="100,100">(if: (passage:)&#39;s name is &quot;Inventory&quot;)[&lt;!--Do nothing--&gt;]
 (else-if: (passage:)&#39;s tags contains &quot;donotshowinventory&quot;)[&lt;!--Do nothing--&gt;]
-(else:)[&lt;div style=&quot;padding:10px; border: 1px solid gray;&quot;&gt;Progress: &lt;my-hl&gt;(print: $inv.length*20)%&lt;/my-hl&gt; - (if: $inv.length &gt;0 )[[[learned-&gt;Learned]]](else:)[learned nothing] (if: $link.length &gt;0 )[ - [[Direct access links-&gt;Links]]](else:)[] &lt;/div&gt;
+(else:)[&lt;div style=&quot;padding:10px; border: 1px solid gray;&quot;&gt;Progress: &lt;my-hl&gt;(print: $inv.length*20)%&lt;/my-hl&gt; - (if: $inv.length &gt;0 )[[[Learned-&gt;Learned]]](else:)[Learned nothing] (if: $link.length &gt;0 )[ - [[Direct access links-&gt;Links]]](else:)[] &lt;/div&gt;
 
 ]
 
@@ -477,7 +503,7 @@ Natural, but not resourceful Somebody else has to change for things to get bette
 (else:)[There is still a lot to learn...]
 
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="17" name="Lay Blame Company Clip" tags="" position="1043,782" size="100,100">In a company we...
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="17" name="Lay Blame Company Clip" tags="" position="1043,782" size="100,100">In a company/organisation we...
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/t__NoFstCmQ?rel=0&amp;amp;showinfo=0&amp;amp;start=572;end=617&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 (45 sec.)
@@ -520,22 +546,22 @@ The younger son soon returns with the answer, &quot;Yes, they have five Geese fo
 
 The father turned to the older son, who nodded his head in appreciation. He now realized why his younger brother was given more responsibility and reward.
 
-[[Makes sense-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="20" name="Intro" tags="" position="239,243" size="100,100">You sit in on the couch in your livingroom thinking back to the good times with your friends last time around. You really enjoyed it. It was at Sam&#39;s place. The food was nice the conversations and company was great.  
+[[Makes sense-&gt;Responsibility clip]]</tw-passagedata><tw-passagedata pid="20" name="Intro" tags="" position="239,243" size="100,100">You sit on the couch in your living-room thinking back to the good times with your friends last time around. You really enjoyed it. It was at Sam&#39;s place. The food was nice the conversations and company was great.  
 
 (link:&quot;Come to think of it...&quot;)[It is really nice to meet with friends and have a meal together. 
 
 (link:&quot;tonight will be great again&quot;)[This time around they will all visit your place!
 
-(link:&quot;Wait a moment&quot;)[There is still alot to be arranged.
+(link:&quot;Wait a moment&quot;)[There is still a lot to be arranged.
 
 You look around the living room...
 
 You see:
 * Papers stacked on the table
 * Papers stacked on the ground
-* Your floor, it needs vacuming badly
+* Your floor, it needs vacuuming badly
 * The kitchen, what a mess, 4 days of dishes pilled up
-* Your cat Simon sleeping on his usal place in the window...
+* Your cat Simon sleeping on his usual place in the window...
 * What to serve?
 
 [[...and you think-&gt;Intro 2]]
@@ -564,24 +590,24 @@ Yes it must be your [[Cat-&gt;Lay Blame]]!]
 ]
 
 
-</tw-passagedata><tw-passagedata pid="24" name="Search Key" tags="donotshowinventory searchkey" position="174,678" size="100,100">(set: $cntkeysearch to it + 1)
+</tw-passagedata><tw-passagedata pid="24" name="Search Key" tags="donotshowinventory searchkey" position="174,678" size="100,100">{(set: $cntkeysearch to it + 1)
 
 (if: $cntkeysearch is 1)[No, the keys are not here.]
 (if: $cntkeysearch is 2)[Ok, second attempt, no keys here.]
 (if: $cntkeysearch is 3)[At least you put in some effort!
 
 But the keys are not here.]
-(if: $cntkeysearch is 4)[Ahm, maybe you should widen your search a bit, no keys here...]
+(if: $cntkeysearch is 4)[Ahem, maybe you should widen your search a bit, no keys here...]
 (if: $cntkeysearch is 5)[Are you looking for keys? Sorry not here...]
 (if: $cntkeysearch is 6)[You are a kind of optimistic, no keys here.]
 (if: $cntkeysearch is 7)[Are you a tester? fail no keys here.]
 (if: $cntkeysearch is 8)[Crash test dummy? sorry no keys.]
-(if: $cntkeysearch &gt; 8)[...you know the (link:&quot;drill&quot;)[no keys here]...]
+(if: $cntkeysearch &gt; 8)[...you know the (link:&quot;drill&quot;)[no keys here]...]}
 
 (link-goto: &quot;Return&quot;, (history:)&#39;s last) 
 </tw-passagedata><tw-passagedata pid="25" name="Justify Intro" tags="" position="649,553" size="100,100">Where are those car keys?
 
-You can see Simons ears turn a bit toward you, but that is all the interest you can expect from him right now. No sound that hints that food is prepared...
+You can see Simon&#39;s ears turn a bit toward you, but that is all the interest you can expect from him right now. No sound that hints that food is prepared...
 
 Lets think back when was the last time you had the keys?
 
@@ -591,10 +617,10 @@ Lets think back when was the last time you had the keys?
 Why did I lose those keys? It must be:
 
 1. The mesh of this place 
-2. I was in a hurry, it was dark and it was raining yesterday evening, I was completely wet and in this chaos it is overcourse perfectly normal  that I can&#39;t remember were I put the keys....
+2. I was in a hurry, it was dark and it was raining yesterday evening, I was completely wet and in this chaos it is of course perfectly normal  that I can&#39;t remember were I put the keys....
 3. crazy other circumstances...
 
-Pick the right answer, but be carefull!
+Pick the right answer, but be careful!
 
 [[Answer 2 and 3 are true-&gt;Justify]]
 [[Answer 1 is true and 2 is false-&gt;Justify]]
@@ -642,19 +668,21 @@ You feel:
     (either: &quot;American Party!&quot;, &quot;Call 112 or 911!&quot;, &quot;Put Simon on the BBQ, with sauce...  ...NO GO!&quot;, &quot;Starve to dead!&quot;,&quot;Search Spare key&quot;,&quot;Credit Card&quot;, &quot;Steal vegetables from the neighbours garden&quot;,&quot;Take the bike&quot;,&quot;Borrow car from the neigbour&quot;,&quot;Search Road Kill&quot;,&quot;Left overs from the garbage can?&quot;,&quot;Convince friends that it is a day of fasting&quot;)
 ]}
 
-It doenst really matter what you choose...
+It doesn&#39;t really matter what you choose...
 
 Important is that you make a decision to some how solve it, to own it. You will start asking questions or look for help to get the problem resolved.
 
-[[Responsibility]]</tw-passagedata><tw-passagedata pid="31" name="Problem" tags="teaching" position="845.6666666666666,915" size="100,100">Right! Something is going wrong we have a problem.
+[[Responsibility]]</tw-passagedata><tw-passagedata pid="31" name="Problem" tags="teaching" position="845,915" size="100,100">Right! Something is going wrong we have a problem.
 
 How did this happen to us?
 
 This is a very common reaction. When you discover that something is going wrong your mind starts a cause-effect-search. We start coping with the mismatch between what we want and the problem we have.
 
-So if we do not know how to &#39;&#39;deal&#39;&#39; with a situation right away our mind starts &#39;&#39;coping&#39;&#39; with the sitation.
+So if we do not know how to &lt;u&gt;&#39;&#39;deal&#39;&#39;&lt;/u&gt; with a situation right away our mind starts &lt;u&gt;&#39;&#39;coping&#39;&#39;&lt;/u&gt; with the sitation.
 
-[[Lets start coping with this problem-&gt;Lay Blame Intro]]</tw-passagedata><tw-passagedata pid="32" name="End" tags="" position="1240,161" size="100,100">&#39;&#39;You reached the last page&#39;&#39;
+[[How big of a problem?-&gt;Problem Clip]]
+
+[[Lets start coping with this problem-&gt;Lay Blame Intro]]</tw-passagedata><tw-passagedata pid="32" name="End" tags="" position="1240,161" size="100,100">&#39;&#39;You reached the last page, you reached &lt;u&gt;Responsibility&lt;/u&gt;&#39;&#39;
 
 You {
 (if: (history:) contains &quot;The model&quot;)[
@@ -664,7 +692,9 @@ You {
 ](else:)[
     have been walking a path through the Responsibility process during this game. The full model looks like the following:
 ]}
-&lt;img src=&quot;resources\Responsibility-Process.png&quot; alt=&quot;Responsibility-Process&quot; style=&quot;width:241px;height:300px;&quot;&gt;
+&lt;img src=&quot;resources\Responsibility-Process.png&quot; alt=&quot;Responsibility-Process diagram&quot; style=&quot;width:241px;height:300px;&quot;&gt;
+In your live you are dealing and coping with numerous different problems, each of these problems might be in a different coping stage, on some you might be stuck in a coping stage. Being more aware of what is happening in your mind can help you catch your self sooner and theirby help you towards responsibility.
+
 (if: $inv&#39;s length &gt; 0)[You learned about coping stages: (print: $inv.join(&quot;, &quot;)).]
 (else:)[Did you learn anything?]
 
@@ -677,18 +707,13 @@ You hesistate a bit and finaly say &quot;Hi Simon&quot;.
 
 Thanks!
 
-Objectives:
-Learn about &quot;taking responsibility&quot;, the stages, help making people aware of what statges they are in, some fun.
-
-still needed stuff:
-* More resources/videos
-* “Catch Yourself Sooner” game
-* better story work
-* Problem between
+{(if: $showMailTo &gt; 0)[
+&lt;a href=&quot;mailto:?bcc=gcrpsurvey@gmail.com&amp;subject=Take-R, look at this website&amp;body=Hi,%0D%0A%0D%0AI did this little game found on this website and thought you might like it:%0D%0A%0D%0A 
+https://ru-b.github.io/twine/Take-R.html&quot;&gt;Tell a friend&lt;/a&gt;]}
 
 YOUR FEEDBACK PLEASE!
 
-How long did it take you to reach this page?
+{Time passed before reaching this page: (print: My.timeSinceStr($startDate))}
 
 I rate this &#39;adventure&#39; on a scale of 1-10: ...
 What I liked about it: ...
@@ -731,7 +756,11 @@ Accountability &lt;&gt; Responsability
 (set: $quote to (a:))
 (set: $startDate to My.currentDate())
 (set: $cntquestion to 0)
-(set: $cntscore to 0)}</tw-passagedata><tw-passagedata pid="36" name="Get Links" tags="teaching" position="358,360" size="100,100">You are in a hurry!
+(set: $cntscore to 0)
+(set: $problemclip_visit to 1)
+
+(set: $showMailTo to 0)
+}</tw-passagedata><tw-passagedata pid="36" name="Get Links" tags="teaching" position="358,360" size="100,100">You are in a hurry!
 
 The story is created for you to experience The Responsibility process. Showing you what happens in your mind when you have to deal with a problem. By a problem we mean any mismatch between what we expected to happen and reality. 
 
@@ -752,15 +781,15 @@ Ok, granted. [[Use your direct access links-&gt;Links]] or go to [[start-&gt;Sta
 
 Things hum.
 
-When something goes wrong stuff starts happening in our brain, we start coping with the situation. In the below model you can see al the coping stages we can experiance:
+When something goes wrong stuff starts happening in our brain, we start coping with the situation. In the below model you can see all the coping stages we can experiance:
 
-&lt;img src=&quot;resources\Responsibility-Process.png&quot; alt=&quot;Responsibility-Process&quot; style=&quot;width:241px;height:300px;&quot;&gt;
+&lt;img src=&quot;resources\Responsibility-Process.png&quot; alt=&quot;Responsibility-Process-diagram&quot; style=&quot;width:241px;height:300px;&quot;&gt;
 
 Learning about this model can help people improve their respons-ability.
 
 (link:&quot;More on the model&quot;)[The model shows mental stages or coping stages:
 
-&#39;&#39;Denial&#39;&#39; 
+&lt;center style=&quot;padding:25px; border: 1px solid white;&quot;&gt;&#39;&#39;Denial&#39;&#39; 
 we ignore the existence of something
 
 &#39;&#39;Lay Blame&#39;&#39; 
@@ -779,15 +808,15 @@ we do what we have to instead of what we want to
 we give up to avoid the pain of Shame and Obligation
 
 &#39;&#39;Responsibility&#39;&#39; 
-we own our ability and power to create, choose, and attract
+we own our ability and power to create, choose, and attract&lt;/center&gt;
 
 These mental positions are natural. We all experience them every day.
 
 The first six mental states (Denial, Lay Blame, Justify, Shame, Obligation, and Quit) are how we cope with problems that we don’t yet know how to face and solve. Think of them as coping mechanisms or defense strategies. In these mental states, our problem doesn’t go away, instead we learn to cope with it.
 
-The mental state—Responsibility—is the mental state in which we grow to overcome problems.]
+The mental state &lt;u&gt;Responsibility&lt;/u&gt; is the mental state in which we grow to overcome problems.]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="38" name="Quit Obligation" tags="donotshowinventory" position="1199,410" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility-Process-quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="38" name="Quit Obligation" tags="donotshowinventory" position="1199,410" size="100,100">&lt;img src=&quot;resources/stage/quit.png&quot; alt=&quot;Responsibility Process diagram quit&quot; style=&quot;width:378px;height:378px;&quot;&gt;
 You give up! you quit! You want to avoid the pain of Obligation...
 
 A natural reaction, but not resourceful. The problem hasn’t gone away – I’m still hurt. I can’t do anything about it. 
@@ -801,13 +830,15 @@ They are the same thing.
 
 
 
-[[Ok lets get back-&gt;Quit Obligation]]</tw-passagedata><tw-passagedata pid="40" name="Mindfulness" tags="" position="333.3333333333333,771.3333333333334" size="100,100">You are not aware of an issue. Some say this is ignoring the problem, but it’s really not even knowing there is an issue to contend with.
+[[Ok lets get back-&gt;Quit Obligation]]</tw-passagedata><tw-passagedata pid="40" name="Mindfulness" tags="" position="333,771" size="100,100">You are not aware of an issue. Some say this is ignoring the problem, but it’s really not even knowing there is an issue to contend with.
 
 (link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="41" name="Intro 2" tags="" position="205,372" size="100,100">[[what to cook? The fridge is nearly empty!-&gt;Go]]
 (link: &quot;I don&#39;t like this story!&quot;) [Sure, you are entitled to this opinion...]
 [[Lets check my social media for a moment-&gt;Denial Intro]]</tw-passagedata><tw-passagedata pid="42" name="Responsibility clip" tags="" position="1044,181" size="100,100">The following clip may look absurd but actual taking the step to responsibilty can be very simple step (but maybe not so comfortable to take). 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D-vYVlXrJCw?rel=0&amp;amp;start=0;end=97;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-(1 min. 37 sec.)
+(if: $problemclip_visit &gt;= 1)[&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D-vYVlXrJCw?rel=0&amp;amp;start=23;end=97;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(1 min. 14 sec.)]
+(else:)[&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D-vYVlXrJCw?rel=0&amp;amp;start=0;end=97;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(1 min. 37 sec.)]
 
 [[How does responsibility look like, a story-&gt;Farmer Sons Story]]
 [[I feel like doing a quiz-&gt;Quiz]]
@@ -886,14 +917,32 @@ Total score: $cntscore
 (print: $link.join(&quot;\n &quot;)).]
 (else:)[]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="49" name="Problem Clip" tags="" position="1032,1054" size="100,100">Bad day clip?
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="49" name="Problem Clip" tags="" position="1042,915" size="100,100">- Trying to poor coffee from an empty thermos flask
+- Reaching for non-existent box of cereal in the cupboard 
+- Receiving an out of office notice on an important mail
 
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/D-vYVlXrJCw?rel=0&amp;amp;start=0;end=22;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(22 sec.)
 
-Mr. Bean train
-https://www.youtube.com/watch?v=3gHEcCjfHzU</tw-passagedata><tw-passagedata pid="50" name="Lay Blame discharge Clip" tags="" position="1160,723" size="100,100">https://www.youtube.com/watch?v=RZWf2_2L2v8
+{(if: $problemclip_visit &gt;= 1)[Déjà vu?]
+(else:)[
+(link: &quot;It is not running as expected&quot;) [The smallest things might trigger the coping process in your mind...] ] }
+
+[[Return-&gt;Problem]] 
+
+(set: $problemclip_visit to it + 1)</tw-passagedata><tw-passagedata pid="50" name="Lay Blame discharge Clip" tags="" position="1160,723" size="100,100">https://www.youtube.com/watch?v=RZWf2_2L2v8
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RZWf2_2L2v8?rel=0&amp;amp; ;start=8;end=140; showinfo=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
-(2 min. 12 sec.)</tw-passagedata></tw-storydata>
+(2 min. 12 sec.)</tw-passagedata><tw-passagedata pid="51" name="John Seddon" tags="donotshowinventory quote" position="1452,1431" size="100,100">&quot;Responsibility is an essential prerequisite for innovation, while compliance is innovation&#39;s enemy.&quot;
+
+[[Ok-&gt;Inspiration Shame]]
+
+(if: $quote contains &quot;seddon&quot;)[Déjà vu?]
+(else:)[
+(set: $quote to $quote + (a: &quot;seddon&quot;))
+]
+
+John Seddon is a British occupational psychologist and author, specialising in change in the service industry. He is the managing director of Vanguard, a consultancy company he formed in 1985 and the inventor of &#39;The Vanguard Method&#39;. </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
