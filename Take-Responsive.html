@@ -12,9 +12,6 @@
 <tw-story></tw-story>
 
 <tw-storydata name="Take R" startnode="18" creator="Twine" creator-version="2.2.1" ifid="EEA8BBA1-E83F-4D15-9FF5-B1AB14A22E35" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* https://twinery.org/forum/discussion/5962/harlowe-default-responsiveness-of-text-too-small-too-narrow */
-@media screen and (max-width: 1024px) {font-size: 1.2em;line-height: 1.6;}
-@media screen and (max-width: 896px) {font-size: 1.05em;line-height: 1.6;}
-@media screen and (max-width: 768px) {font-size: 0.9em;line-height: 1.6;}
 
 /* http://www.ohiofi.com/blog/twine-css/ */
 
@@ -23,8 +20,44 @@ tw-story {
   color: #EEEEFF;
   text-shadow: 1px 1px #000000; 
   background-color: #3a4350; 
-  /*font-size: 20px;*/
+  font-size: 20px;
   font-family: "Open Sans","Arial",sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  tw-story {	
+    /* The following changes the text */
+    color: #EEEEFF;
+    text-shadow: 1px 1px #000000; 
+    background-color: #3a4350; 
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: "Open Sans","Arial",sans-serif;
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  tw-story {	
+    /* The following changes the text */
+    color: #EEEEFF;
+    text-shadow: 1px 1px #000000; 
+    background-color: #3a4350; 
+    font-size: 1.05em;
+    line-height: 1.6;
+    font-family: "Open Sans","Arial",sans-serif;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  tw-story {	
+    /* The following changes the text */
+    color: #EEEEFF;
+    text-shadow: 1px 1px #000000; 
+    background-color: #3a4350; 
+    font-size: 0.9em;
+    line-height: 1.6;
+    font-family: "Open Sans","Arial",sans-serif;
+  }
 }
 
 tw-sidebar {
