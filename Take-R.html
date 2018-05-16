@@ -104,10 +104,6 @@ img {
 
 /*tag select background images*/
 
-tw-story[tags~="start"] {
- /*background-image:url("resources/room_mess.jpg");
- background-size:cover;*/
-}
 tw-story[tags~="inventory"] {
  background-image:url("resources/openmind.jpg");
  background-size:cover;
@@ -132,12 +128,17 @@ tw-story[tags~="farm"] {
  background-image:url("resources/farm.jpg");
  background-size:cover;
 }
+tw-story[tags~="socialmedia"] {
+ background-image:url("resources/social_media.jpg");
+ background-size:cover;
+}
 
 tw-story[tags~="teaching"] {
   /*background-color: #3a7750; */
   /*background-color: #3a4350; original*/
   background-color: #1a2330; 
 }
+
 
 
 
@@ -398,6 +399,7 @@ if (! window.My) {
 
 
 
+
 </script><tw-passagedata pid="1" name="Go" tags="" position="347,633" size="100,100">You have friends coming for dinner tonight and you still need to do some big shopping. But darn, where are your car keys? You always put them on the desk next to your laptop!
 
 [[Check the floor-&gt;Search Key]]
@@ -480,7 +482,7 @@ It is the economy
 It is the management
 It is the culture
 
-(if: $inv contains &quot;Justify&quot;)[Yes! Now you can see when you are justifying on circumstances [[Investigate-&gt;Shame Intro]] more.]
+(if: $inv contains &quot;Justify&quot;)[Yes! Now you can see when you are justifying on circumstances. [[Investigate more-&gt;Shame Intro]]]
 (else:)[There seems no way out if you stay in justify...]</tw-passagedata><tw-passagedata pid="10" name="Shame" tags="teaching" position="851,439" size="100,100">&lt;img src=&quot;resources/model/shame.JPG&quot; alt=&quot;Responsibility Model diagram shame&quot; style=&quot;max-width: 718px; width:100%;&quot;&quot;&gt;
 &#39;&#39;In Shame we lay blame on ourselves (often felt as guilt)&#39;&#39;
 
@@ -497,9 +499,10 @@ We think we lack something we need
 
 [[Some keys to get out of it-&gt;Shame clip]]
 
-(if: $inv contains &quot;Shame&quot;)[Yes! Now you can see you should not be ashamed [[Next-&gt;Obligation Intro]]]
-(else:)[There seems no way out if you stay in shame...]
+(if: $inv contains &quot;Shame&quot;)[Yes! Now you can see you should not be ashamed.
 
+[[Next-&gt;Obligation Intro]]]
+(else:)[There seems no way out if you stay in shame...]
 
 [[I feel too ashamed-&gt;Quit Shame]]</tw-passagedata><tw-passagedata pid="11" name="Obligation" tags="teaching" position="850,313" size="100,100">&lt;img src=&quot;resources/model/obligation.JPG&quot; alt=&quot;Responsibility Model diagram obligation&quot; style=&quot;max-width: 718px; width:100%;&quot;&gt;
 &#39;&#39;In Obligation we do what we have to instead of what we want to&#39;&#39;
@@ -518,9 +521,7 @@ Natural, but not resourceful I’m trapped by circumstances – things won’t g
 (else:)[You can feel the obligation put on you...]
 
 
-[[Oh I can&#39;t take it any more-&gt;Quit Obligation]]
-
-•	</tw-passagedata><tw-passagedata pid="12" name="Quit Shame" tags="donotshowinventory" position="1202,567" size="100,100">&lt;img src=&quot;resources/model/quit_shame.JPG&quot; alt=&quot;Responsibility model diagram quit shame&quot; style=&quot;max-width: 718px; width:100%;&quot;&gt;
+[[Oh I can&#39;t take it any more-&gt;Quit Obligation]]</tw-passagedata><tw-passagedata pid="12" name="Quit Shame" tags="donotshowinventory" position="1202,567" size="100,100">&lt;img src=&quot;resources/model/quit_shame.JPG&quot; alt=&quot;Responsibility model diagram quit shame&quot; style=&quot;max-width: 718px; width:100%;&quot;&gt;
 **In Quit we give up to avoid the pain of Shame**
 
 You pretend it’s not a problem “I can’t take any more – I give up!”.
@@ -598,7 +599,7 @@ Is his statement true?
 </tw-passagedata><tw-passagedata pid="18" name="Start" tags="donotshowinventory start" position="392,184" size="100,100">Great that you are here!
 
 &lt;img src=&quot;resources\lazy_cat.jpeg&quot; alt=&quot;Lazy cat on coach&quot; style=&quot;max-width: 750px; width:100%;&quot;&gt;
-(This story will take about 20 minutes)
+(It will take between 3 and 15 minutes depending on your choices)
 
 There will be some videoclips with audio ahead.
 
@@ -726,7 +727,7 @@ When something is not going as expected we are hard wired to get out of this sit
 (else:)[(set: $inv to $inv + (a: &quot;Lay Blame&quot;))]
 
 
-[[Ok-&gt;Justify Intro]]</tw-passagedata><tw-passagedata pid="29" name="Obligation Intro" tags="" position="643,314" size="100,100">Your mother raised you to be a proper host!
+[[Next-&gt;Justify Intro]]</tw-passagedata><tw-passagedata pid="29" name="Obligation Intro" tags="" position="643,314" size="100,100">Your mother raised you to be a proper host!
 
 She told you to do your shopping in time. When having guest over you do shopping you do cleaning and you make sure everything is ready.
 
